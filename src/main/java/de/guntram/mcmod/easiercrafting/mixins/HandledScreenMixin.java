@@ -56,8 +56,8 @@ public abstract class HandledScreenMixin extends Screen {
             String titleText = this.title.getString() + " (" + itemsLeft + " " + I18n.translate("easiercrafting.furnace.itemsleft")+")";
             this.textRenderer.draw(stack, titleText, (float)(this.backgroundWidth / 2 - this.textRenderer.getWidth(titleText) / 2), 6.0F, 4210752);
             this.textRenderer.draw(stack, playerInventoryTitle, 8.0F, (float)(this.backgroundHeight - 96 + 2), 4210752);
-            this.textRenderer.draw(stack, itemDonePercent+" %", 20, 22, 4210752);
-            this.textRenderer.draw(stack, fuelLeftPercent+" %", 20, 58, 4210752);
+            this.textRenderer.draw(stack, itemDonePercent+"%", 20, 22, 0xFFFFFF);
+            this.textRenderer.draw(stack, fuelLeftPercent+"%", 20, 58, 0xFFFFFF);
 
             //for (int i=0; i<4; i++) {
             //    this.font.draw(""+((PropertyDelegateProvider)container).getPropertyDelegate(i), 5, 10+i*10, 0x000000);
